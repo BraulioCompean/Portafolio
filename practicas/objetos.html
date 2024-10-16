@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos Multimedia</title>
+    <style>
+      body{
+        background-color: gray;
+      }
+
+      .botones-moverse{
+            margin-top: 50px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Imágenes</h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PNG</td>
+          <td>
+            <img
+              src=""
+              alt=""
+              width="100"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>JPG / JPEG</td>
+          <td>
+            <img
+              src=""
+              alt=""
+              width="250"
+              loading="lazy"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>SVG</td>
+          <td>
+            <img
+              src=""
+              alt="Banner"
+              width="250"
+              height="250"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h1> Audio y video</h1>
+    <table border='1'>
+      <thead>
+        <tr>
+          <th>
+            Tipo
+          </th>
+          <th>Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MP3</td>
+          <td>
+            <audio src="./assets/t-rex-roar.mp3" autoplay controls></audio>
+          </td>
+        </tr>
+        <tr>
+          <td>Video</td>
+          <td>
+            <video controls width="300" height="300">
+              <source src="./assets/flower.webm" type="video/webm">
+              <source src="./assets/flower.mp4" type="video/mp4">
+              Descarga el video en <a href="./assets/flower.webm">WEBM</a> o
+              <a href="./assets/flower.mp4">MP4</a>
+            </video>
+          </td>
+        </tr>
+        <tr>
+          <td>SVG</td>
+          <td>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                  width="200"
+                  height="200"
+                  fill="green" 
+                  viewBox="0 0 256 256"
+                  data-darkreader-inline-fill="" 
+                  style="--darkreader-inline-fill: #a11313;">
+                  <path d="M185.33,114.21l29.14-27.42.17-.17a32,32,0,0,0-45.26-45.26c0,.06-.11.11-.17.17L141.79,70.67l-83-30.2a8,8,0,0,0-8.39,1.86l-24,24a8,8,0,0,0,1.22,12.31l63.89,42.59L76.69,136H56a8,8,0,0,0-5.65,2.34l-24,24A8,8,0,0,0,29,175.42l36.82,14.73,14.7,36.75.06.16a8,8,0,0,0,13.18,2.47l23.87-23.88A8,8,0,0,0,120,200V179.31l14.76-14.76,42.59,63.89a8,8,0,0,0,12.31,1.22l24-24a8,8,0,0,0,1.86-8.39Zm-.07,97.23-42.59-63.88A8,8,0,0,0,136.8,144c-.27,0-.53,0-.79,0a8,8,0,0,0-5.66,2.35l-24,24A8,8,0,0,0,104,176v20.69L90.93,209.76,79.43,181A8,8,0,0,0,75,176.57l-28.74-11.5L59.32,152H80a8,8,0,0,0,5.66-2.34l24-24a8,8,0,0,0-1.22-12.32L44.56,70.74l13.5-13.49,83.22,30.26a8,8,0,0,0,8.56-2L180.78,52.6A16,16,0,0,1,203.4,75.23l-32.87,30.93a8,8,0,0,0-2,8.56l30.26,83.22Z">
+                  </path>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="botones-moverse">
+      <div>
+        <a href="./tablas.html">
+          ⬅️ Practica anterior (tablas) 
+        </a>
+        <a href="./horario.html">
+            Practica siguiente (horario) ➡️
+        </a>
+  
+      </div>
+      <a href="../index.html">
+          🏠Principal
+      </a>
+
+    </div>
+  </body>
+</html>

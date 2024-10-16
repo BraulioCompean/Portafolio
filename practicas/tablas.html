@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <style>
+        body{
+            background-color: rgb(76, 87, 88);
+        }
+        .botones-moverse{
+            margin-top: 50px;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+  <body >
+    <h1>Tablas</h1>
+    <!-- ⚠ Los atributos border, bgcolor y align se consideran en desuso -->
+    <table border="1" bgcolor="pink" align="center">
+      <tr>
+        <td>Nombre 1</td>
+        <td bgcolor="red">Nombre 2</td>
+        <td>Nombre 3</td>
+      </tr>
+      <tr>
+        <td>Apellido 1</td>
+        <td>Apellido 2</td>
+        <td>Apellido 3</td>
+      </tr>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+      </tr>
+    </table>
+    <p>Algo de texto</p>
+
+    <table>
+      <tr>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>🟡</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>🟡</td>
+        <td>🟡</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>🟡</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table border="1" align="center">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jaime</td>
+          <td>37</td>
+        </tr>
+        <tr>
+          <td>Alonso</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>49</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr />
+
+    <!-- table>thead>tr*2>th*2^^tbody>tr*2>td*2 -->
+    <table border="1" align="center">
+      <thead>
+        <tr>
+          <th colspan="2">Información</th>
+        </tr>
+        <tr>
+          <th>Nombre</th>
+          <th>Materia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Jaime</td>
+          <td>Fundamentos de Programación</td>
+        </tr>
+        <tr>
+          <td>Programación Web</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <table border="1" align="center">
+      <tr>
+        <td colspan="3" bgcolor="green">1</td>
+        <td rowspan="3" bgcolor="purple">4</td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="blue">2</td>
+        <td bgcolor="yellow">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="pink">5</td>
+        <td bgcolor="red">6</td>
+        <td bgcolor="orange">7</td>
+      </tr>
+    </table>
+    <div class="botones-moverse">
+      <div>
+        <a href="./listas.html">
+          ⬅️ Practica anterior (listas) 
+        </a>
+        <a href="./objetos.html">
+            Practica siguiente (objetos) ➡️
+        </a>
+  
+      </div>
+      <a href="../index.html">
+          🏠Principal
+      </a>
+
+    </div>
+  </body>
+</html>
