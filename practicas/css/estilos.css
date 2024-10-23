@@ -1,0 +1,27 @@
+
+
+h1{
+    color: #d64b0b;
+    font-family: "Comic Sans MS" , "Comic Sans" , sans-serif;
+}
+hr{
+    height: 2px;
+    background-color: rgb(68, 72, 72);
+    
+}
+
+h2{
+    color: rgb(219, 182, 227);
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+h3{
+    background-color: rgb(171, 235, 118);
+    border: 1px solid gray;
+    box-shadow: 5px 5px 3px rgb(140, 218, 244);
+    text-shadow: 1px 1px 2px gray;
+
+}
