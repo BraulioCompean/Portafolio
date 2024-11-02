@@ -1,0 +1,90 @@
+/* * {
+    color:#5b5657;
+} */
+
+body{
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    background-color: rgb(206, 206, 214);
+}
+
+h1 {
+    color:#686d5c;
+}
+
+.verde{
+    background-color: #00ff22;
+    color:#000
+}
+
+h6.verde{
+    background-color: #80ff00;
+}
+
+#sections{
+    background-color: hsl(249, 35%, 57%);      
+    color: hsl(24, 24%, 96%);
+}
+
+[type="text"]{
+    border: 2px solid #8000ff;
+}
+
+input[type]{
+    background-color: rgb(236, 213, 24);
+}
+
+input[type="text"]:focus{
+    background-color: #ff80c0;
+}
+
+p::first-line{
+    font-family: monospace;
+}
+
+/* 
+div[class~="azul"]{
+    background-color: #00ff22;
+} */
+a[href="https"]{
+    color: #ff80c0;
+}
+
+
+button:active{
+    background-color: #0080ff;
+}
+
+input:focus{
+    background-color: #00ff22;
+}
+
+p::first-letter{
+    font-size: 24px;
+
+}
+
+
+blockquote::before{
+    content: "📊";
+}
+
+blockquote::after{
+    content: "🥎";
+}
+
+
+h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+h3 {
+    color: #000000;
+    background-color: #e2e4e3;
+    border: 1px solid #525551;
+    box-shadow: 2px 2px 5px #5c5c57;
+    text-shadow: 1px 1px 2px #cfa1a1;
+  }

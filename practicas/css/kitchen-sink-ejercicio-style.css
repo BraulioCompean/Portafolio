@@ -1,0 +1,238 @@
+
+/* 
+    PALETA DE COLORES QUE USAREMOS
+*/
+:root{
+    --space-cadet: #392f5aff;  
+    --plum-web: #f092ddff;
+    --plum-web-2: #ffaff0ff;
+    --fairy-tale: #eec8e0ff;
+    --ash-gray: #a8c7bbff;
+}
+
+section h3{
+    font-family: "Roboto";
+    font-style: italic;
+}
+body{
+    background-color: var(--plum-web-2);
+    font-family: "Itim";
+}
+legend{
+    font-family: "Bebas Neue";
+}
+
+body [class="header-kitchen-sink"] p{
+    color: var(--space-cadet);
+}
+
+body h1{
+    color: var(--ash-gray);
+}
+
+#headings h1{
+    color: var(--ash-gray);
+}
+
+
+#headings h2{
+    color: var(--fairy-tale);
+}
+a:link{
+    color: white;
+}
+#titulo-principal{
+    color: white;
+}
+
+body section{
+    background-color: var(--space-cadet);
+}
+
+
+
+p{
+    color: var(--fairy-tale);
+}
+
+img{
+    
+    transition: transform  0.6s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+
+
+hr{
+    height: 10px;
+    background-color: var(--space-cadet);
+}
+
+
+input{
+    transition: box-shadow 0.8s;
+}
+
+
+
+
+label:hover + .box-input {
+    box-shadow: 3px 3px 10px white;
+}
+
+
+
+input[class="box-input"]:focus{
+    box-shadow: 3px 3px 10px white;
+
+}
+
+h3{
+    color: white;
+}
+h4{
+    color: var(--ash-gray);
+}
+
+h5{
+    color: var(--fairy-tale);
+}
+h6{
+    color: white;
+}
+fieldset legend{
+    color: var(--ash-gray);
+}
+
+form p label{
+    color: white;
+}
+/* form p input{
+    background-color: var(--fairy-tale);
+} */
+
+
+.label-fieldset{
+    color: var(--fairy-tale);
+}
+
+button[class="botonClase"] , input[class="botonClase"],
+button[class="submitClase"] , input[class="submitClase"],
+button[class="resetClase"] , input[class="resetClase"]
+{
+    transition: background-color 0.2s, transform 0.5s;
+    cursor: pointer;
+}
+
+
+button[class="botonClase"]:hover, input[class="botonClase"]:hover,
+button[class="submitClase"]:hover, input[class="submitClase"]:hover,
+button[class="resetClase"]:hover, input[class="resetClase"]:hover {
+    background-color: var(--fairy-tale);
+    transform: scale(1.2);
+}
+
+output{
+    color: var(--ash-gray);
+}
+
+#suma-fomr input{
+    transition: background-color 1s;
+}
+
+#suma-form input[name="a"]:focus{
+    background-color: var(--plum-web);
+}
+#suma-form input[name="b"]:focus{
+    background-color: var(--plum-web-2);
+}
+
+ul li{
+    color: var(--ash-gray);
+}
+
+ol li{
+    color: var(--fairy-tale);
+}
+
+pre{
+    color: white;
+}
+
+#segundo-fieldset label{
+    color: white;
+}
+
+table caption{
+    color: white;
+}
+
+.primer-columna{
+    background-color: var(--plum-web-2);
+}
+
+.segunda-columna{
+    background-color: var(--plum-web-2);
+}
+
+.tercera-columna{
+    background-color: var(--fairy-tale);
+}
+
+footer p{
+    color: var(--space-cadet);
+}
+
+
+mtable{
+    background-color: var(--ash-gray);
+}
+
+
+#complex-table{
+    background-color: var(--ash-gray);
+    color: black;
+}
+
+
+#complex-table tr, #complex-table td, #complex-table th{
+    border: 2px solid black;
+}
+
+#table-estados{
+    background-color: var(--ash-gray);
+}
+
+
+#table-estados tr,#table-estados td,#table-estados th{
+    border: 2px solid black;
+}
+
+#table-lenguajes colgroup{
+    background-color: var(--ash-gray);
+}
+
+
+address{
+    color: white;
+}
+
+
+figcaption{
+    color: var(--ash-gray);
+}
+
+dl dt{
+    color: var(--ash-gray);
+}
+
+dl dd{
+    color: var(--fairy-tale);
+}
+
+iframe{
+    background-color: white;
+}
