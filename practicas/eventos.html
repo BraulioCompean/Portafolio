@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
+        />
+    </head>
+    <body>
+        <main class="container">
+            <article>
+                <h1>Manejo de eventos</h1>
+                <h2>Propiedad <code>ON</code></h2>
+                <button onclick="saludar()">Saludar</button>
+                <output id="salida-boton"> Nada por ahora </output>
+            </article>
+            <article>
+                <h2>Event Listener</h2>
+                <button id="otro-boton" onclick="">Otro boton</button>
+                <output id="salida-otro">Nada por ahora</output>
+            </article>
+            <article>
+                <h2>Eventos input</h2>
+                <form action="#">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" autocomplete="off">
+                </form>
+                <output id="salida_teclado">Nada por aca</output>
+            </article>
+        </main>
+        <script src="scripts/eventos.js"></script>
+    </body>
+</html>
