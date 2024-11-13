@@ -26,9 +26,33 @@
                 <h2>Eventos input</h2>
                 <form action="#">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" autocomplete="off">
+                    <input type="text" id="nombre" autocomplete="off" />
                 </form>
                 <output id="salida_teclado">Nada por aca</output>
+            </article>
+            <article>
+                <h2>Eventos del tipo Submit</h2>
+                <form action="#" id="miForm">
+                    <fieldset>
+                        <label for="a">Valor <code>A</code></label>
+                        <input type="number" id="a" name="a">
+                    </fieldset>
+                    <fieldset>
+                        <label for="b">Valor <code>B</code></label>
+                        <input type="number" id="b" name="b">
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit" id="sumarbtn">
+                            Sumar
+                        </button>
+                        <code id="salida">0</code>
+                    </fieldset>
+
+                    <!-- <fieldset>
+                        <label for="salida">Salida</label>
+                        <input type="text" id="salida" name="salida">
+                    </fieldset> -->
+                </form>
             </article>
         </main>
         <script src="scripts/eventos.js"></script>

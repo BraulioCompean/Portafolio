@@ -17,10 +17,28 @@ otro_boton.addEventListener("mouseleave", function () {
     this.innerText = "Sale el mouse";
 });
 
+let nombreTxt = document.getElementById("nombre");
+let salida_input = document.getElementById("salida_teclado");
 
-let nombreTxt = document.getElementById('nombre')
-let salida_input = document.getElementById('salida_teclado')
+nombreTxt.addEventListener("keydown", function (event) {
+    salida_input.innerHTML = `Se presiono <kbd>${event.key}</kbd>`;
+});
 
-nombreTxt.addEventListener('keydown',function(event){
-    salida_input.innerHTML = `Se presiono <kbd>${event.key}</kbd>`
+let formulario = document.getElementById("miForm");
+
+
+formulario.addEventListener("submit",function(event){
+    event.preventDefault()
+    // alert("Se intento procesar el formulario")
+
+    let aTxt = document.getElementById('a')
+    let bTxt = document.getElementById('b')
+    // console.log(aTxt,bTxt)
+    
+    let a = parseInt(aTxt.value)
+    let b = parseInt(bTxt.value)
+
+    let salida = document.getElementById("salida")
+    let resultado =  a + b
+    salida.innerHTML = resultado
 })
