@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI</title>
+    <script src="scripts/pokeapi.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
+    />
+    <style>
+        body{
+            font-weight: bolder ;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Poke API</h1>
+
+        <article>
+            <dl>
+                <dt>Nombre</dt>
+                <dd id="pokemon-name"></dd>
+                <dt>Tipos</dt>
+                <dd id="pokemon-types">
+                </dd>
+                <dt>Imagen</dt>
+                <dd>
+                    <img id="pokemon-image" src="" alt="n/a">
+                </dd>
+            </dl>
+        </article>
+    </main>
+</body>
+</html>

@@ -29,6 +29,8 @@ function registro(texto){
 }
 
 lista.appendChild(registro("DOM CARGADO"))
+
+
 let timer = setTimeout(()=>{
     lista.appendChild(registro("A los 3 segundos ⏰"))
 },3000)
@@ -70,3 +72,8 @@ let navidad_2024 = new Date("2024-12-24 12:00:00")
 let fin_2024 = new Date(2024,11,31,23,59,59)
 console.log(navidad_2024)
 console.log(fin_2024)
+
+
+
+
+
