@@ -1,37 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeAPI</title>
-    <script src="scripts/pokeapi.js" defer></script>
-    <link
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PokeAPI</title>
+        <script src="scripts/pokeapi.js" defer></script>
+        <!-- <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
-    />
-    <style>
+    /> -->
+        <link rel="stylesheet" href="css/pokeapi.css" />
+        <!-- <style>
         body{
             font-weight: bolder ;
         }
-    </style>
-</head>
-<body>
-    <main class="container">
-        <h1>Poke API</h1>
+    </style> -->
+    </head>
+    <body>
+        <main class="container">
+            <h1 id="title">Poke API</h1>
 
-        <article>
-            <dl>
-                <dt>Nombre</dt>
-                <dd id="pokemon-name"></dd>
-                <dt>Tipos</dt>
-                <dd id="pokemon-types">
-                </dd>
-                <dt>Imagen</dt>
-                <dd>
-                    <img id="pokemon-image" src="" alt="n/a">
-                </dd>
-            </dl>
-        </article>
-    </main>
-</body>
+            <article class="card-pokemon" id="card-pokemon">
+                <div class="first-container image-container search-container">
+                    <div class="pokemon-input-container">
+                        <label for="pokemon-input">Search Pokemon</label>
+                        <input
+                            type="text"
+                            name="pokemon-input"
+                            id="pokemon-input"
+                            placeholder="ID or Name"
+                            onchange="handleInputChange(event)"
+                        />
+                    </div>
+                    <div>
+                        <img
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/25.png"
+                            alt="pokemon-image"
+                            id="pokemon-image"
+                        />
+                        <dl>
+                            <dt>Weight</dt>
+                            <dd id="pokemon-weight">0.6 Kg</dd>
+                            <dt>Height</dt>
+                            <dd id="pokemon-height">0.4 M</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="data-pokemon-container">
+                    <div class="pokemon-name-container">
+                        <h1 id="pokemon-name">Pikachu</h1>
+                    </div>
+                    <hr />
+                    <h2>Types:</h2>
+                    <div class="container-types" id="container-types">
+                        <div class="element-types">
+                            <h3 class="h3-type-element">Electric</h3>
+                        </div>
+                    </div>
+                    <hr />
+                    <h2>Base Stats :</h2>
+                    <div class="base-stats-container">
+                        <div class="hp-stat base-stat">
+                            <h3 class="h3-base-stat">HP: 40</h3>
+                        </div>
+                        <div class="attack-stat base-stat">
+                            <h3 class="h3-base-stat">ATTACK: 40</h3>
+                        </div>
+                        <div class="defense-stat base-stat">
+                            <h3 class="h3-base-stat">DEFENSE: 40</h3>
+                        </div>
+                        <div class="special-attack-stat base-stat">
+                            <h3 class="h3-base-stat">SPECIAL ATTACK: 40</h3>
+                        </div>
+                        <div class="special-defense-stat base-stat">
+                            <h3 class="h3-base-stat" >SPECIAL DEFENSE: 40</h3>
+                        </div>
+                        <div class="speed-stat base-stat">
+                            <h3 class="h3-base-stat">SPEED: 40</h3>
+                        </div>
+                    </div>
+                    <hr />
+                    <h2>Sound :</h2>
+                    <div class="audio-container">
+                        <audio
+                            controls
+                            src="https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/25.ogg"
+                            id="audio-pokemon"
+                        ></audio>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </body>
 </html>
