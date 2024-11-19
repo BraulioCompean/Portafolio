@@ -24,7 +24,8 @@ function buscar(nombre) { //FUNCION QUE SE EJECUTARA CADA VEZ QUE HAYA UN CAMBIO
         })
         .then((pokemon) => {
             if (pokemon !== undefined && nombre) { //VERIFICAMOS QUE LA RESPUESTA NO SEA UNDEFINED Y QUE EXISTE UN NOMBRE
-                // console.log(pokemon);
+                console.clear()
+                console.log(pokemon);
                 containerTypes.innerHTML = ""; //RESETEAMOS EL CONTENEDOR DE TIPOS DEL POKEMON
                 pokemonName.innerText =         //AGREGAREMOS EL NOMBRE DEL POKEMON AL ELEMENTO h1 = (pokemonName)
                     pokemon.name.charAt(0).toUpperCase() + //CONVERTIMOS EL PRIMER CARACTER A MAYUSCULAS Y CONCATENAMOS CON EL RESTO DE LA CADENA
