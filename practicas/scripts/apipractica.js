@@ -3,7 +3,7 @@ const buttonCloseModal = document.getElementById("closeModalButton");
 const moviesContainer = document.getElementById("container-movies");
 
 const defaultResults = moviesContainer.innerHTML;
-const URL_SEARCH = "http://www.omdbapi.com/?apikey=1adf0340&s=";
+const URL_SEARCH = "https://www.omdbapi.com/?apikey=1adf0340&s=";
 function openModal(idMovie) {
     loadModalInfo(idMovie);
     modal.style.display = "flex";
@@ -72,7 +72,7 @@ function searchMovies(movieName) {
 }
 
 function loadModalInfo(idMovie) {
-    fetch(`http://www.omdbapi.com/?i=${idMovie}&apikey=1adf0340`)
+    fetch(`https://www.omdbapi.com/?i=${idMovie}&apikey=1adf0340`)
         .then((response) => response.json())
         .then((movieData) => {
             modal.innerHTML = "";
