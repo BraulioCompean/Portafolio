@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>API Ejercicio</title>
+        <script src="scripts/apipractica.js" defer></script>
+        <link rel="stylesheet" href="css/apipratica.css" />
+    </head>
+    <body>
+        <main class="main-container">
+            <nav class="input-container">
+                <div class="searchinput-svg-container">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+                    >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                    <input
+                        type="text"
+                        id="input-search"
+                        name="input-search"
+                        placeholder="Search for Movies"
+                        onchange="handleInputSearch(event)"
+                    />
+                </div>
+            </nav>
+            <section class="movies-container" id="container-movies"></section>
+        </main>
+        <div class="movie-modal" id="movie-modal-container"></div>
+    </body>
+</html>

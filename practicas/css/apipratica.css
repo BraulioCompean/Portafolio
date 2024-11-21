@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body,
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Host Grotesk";
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 13, 22);
+}
+
+.main-container {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 1500px;
+    height: 750px;
+    background-color: rgb(38, 38, 63);
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-search {
+    background: none;
+    border-radius: 10px;
+    border: 1px solid rgb(77, 77, 83);
+    width: auto;
+    transition: border 0.5s;
+    font-size: 30px;
+    color: rgb(138, 137, 137);
+}
+
+.searchinput-svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.searchinput-svg-container:hover #input-search {
+    border: 1px solid white;
+}
+
+.movie-card {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    border: 1px solid rgb(137, 134, 137);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: scale 1s;
+}
+
+.movie-card:hover {
+    scale: 1.02;
+}
+.image-poster {
+    width: 100px;
+    height: 150px;
+}
+
+.movies-container {
+    gap: 20px;
+    height: 550px;
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    margin-top: 50px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.movies-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.movies-container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.category-container {
+    margin: 0;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: fit-content;
+    background-color: azure;
+}
+h4 {
+    margin: 0;
+}
+
+.movie-info h1 {
+    color: white;
+}
+
+.categories-movie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.movie-modal {
+    display: none; /* Por defecto, estará oculto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+}
+
+
+.modal-content{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+
+.rating-movie{
+    border: 1px solid gray;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.rating-movie img{
+    width: 50px;
+    height: 50px;
+}
+
+.rating-movie h3{
+    margin: 0;
+}
+
+.movie-ratings-modal-container{
+    display: flex;
+    gap: 15px;
+}
+.rating-movie:hover{
+    background-color: rgb(206, 205, 205);
+}
+
+.close-modal-button{
+    background: none;
+    border: none;
+    padding: 0;
+    height: fit-content;
+    cursor: pointer;
+}

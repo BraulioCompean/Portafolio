@@ -39,6 +39,7 @@ function buscarPokemon(nombre) {
                     "src",
                     pokemon.sprites.other["official-artwork"].front_default
                 );
+                
                 pokemonWeight.innerText = //FORMATEAMOS LOS DATOS QUE NOS DA LA API
                     Math.round(pokemon.weight * 0.1) + " Kg";
                 pokemonHeight.innerText =
@@ -53,7 +54,7 @@ function buscarPokemon(nombre) {
                     type.className = "h3-type-element";
                     type.innerText =
                         element.type.name.charAt(0).toUpperCase() +
-                        element.type.name.slice(1);
+                        element.type.name.slice(1); 
 
                     typeContainer.appendChild(type);
                     containerTypes.appendChild(typeContainer);
@@ -75,3 +76,5 @@ function buscarPokemon(nombre) {
             window.alert(error.message); //EN CASO DE QUE EL POKEMON NO EXISTA, SE LANZARA UNA VENTANA QUE NOS DIRA EL ERROR
         });
 }
+
+
